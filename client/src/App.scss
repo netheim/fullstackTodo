@@ -1,0 +1,59 @@
+$app-padding: 16px;
+$app-font: sans-serif;
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app {
+
+  padding: $app-padding;
+  font-family: $app-font;
+  max-width: 400px;
+  margin: 0 auto;
+
+  h1 {
+    text-align: center;
+  }
+
+  form {
+    display: flex;
+    margin-bottom: 1em;
+
+    input {
+      flex: 1;
+      padding: 0.5em;
+      font-size: 1em;
+    }
+
+    button {
+      padding: 0.5em 1em;
+      font-size: 1em;
+      margin-left: 0.5em;
+    }
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      margin-bottom: 0.5em;
+
+      &.done label {
+        text-decoration: line-through;
+        color: gray;
+      }
+
+      label {
+        cursor: pointer;
+      }
+
+      input {
+        margin-right: 0.5em;
+      }
+    }
+  }
+}
